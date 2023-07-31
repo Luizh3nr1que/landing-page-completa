@@ -1,0 +1,142 @@
+.header-nav a:nth-child(3) {
+    color: rgb(255, 77, 77);
+}
+
+.links-mobile a:nth-child(3) {
+    background-color: rgb(248, 120, 120);
+    color: white;
+}
+
+.inicio-conteudo {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio-conteudo:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.897)), url("../../img/header/priscilla-du-preez-W3SEyZODn8U-unsplash.jpg");
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.inicio-conteudo h1 {
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+}
+
+.inicio-conteudo p {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+.menuContainer {
+    width: 100%;
+    margin-top: 150px;
+    padding: 0 20px;
+}
+
+.menuContainer h1 {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width:1200px) {
+    .menuContainer h1 {
+        text-align: center;
+    }
+}
+
+.menuConteudo {
+    max-width: 70em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card .img {
+    width: 550px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.card .jantar {
+    width: 350px;
+}
+
+.card .img img {
+    width: 100%;
+    transition: .4s;
+
+}
+
+.card .img img:hover {
+    transform: scale(1.2);
+}
+
+.card h2 {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+}
+
+.price {
+    background: rgba(255, 255, 255, 0.707);
+    color: rgb(246, 181, 40);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.36);
+    border-radius: 30px;
+    padding: 10px;
+    width: 100px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-star {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.reviewsCard {
+    color: rgb(104, 104, 104);
+}

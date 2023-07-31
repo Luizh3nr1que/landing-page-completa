@@ -1,0 +1,372 @@
+.header-nav a:first-child {
+    color: rgb(255, 77, 77);
+}
+
+.links-mobile a:first-child {
+    background-color: rgb(248, 120, 120);
+    color: white;
+}
+
+.inicio-conteudo {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inicio-conteudo:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7921568627)), url("../../img/header/luisa-brimble-aFzg83dvnAI-unsplash.jpg");
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.escrita h1 {
+    font-size: 70px;
+    color: white;
+    font-weight: bold;
+}
+
+.descriçao {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.nota {
+    font-size: 30px;
+    color: white;
+}
+
+.estrelas {
+    font-size: 0px;
+}
+
+.star {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid #000;
+    clip-path: polygon(50% 0%,
+            61.8% 38.2%,
+            100% 35.4%,
+            68.2% 57.3%,
+            79.1% 91%,
+            50% 70.1%,
+            20.9% 91%,
+            31.8% 57.3%,
+            0% 35.4%,
+            38.2% 38.2%);
+    margin-right: 5px;
+}
+
+.filled {
+    background-color: gold;
+}
+
+.reviews {
+    font-size: 25px;
+    color: white;
+}
+
+.carrosel {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.carrosel::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+    border-radius: 10px;
+}
+
+.carrosel .slide img {
+    width: 550px;
+    border-radius: 10px;
+}
+
+.slide {
+    display: none;
+}
+
+.slide:first-child {
+    display: block;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    color: white;
+    font-size: 30px;
+    z-index: 1;
+}
+
+.descRest {
+    position: absolute;
+    color: white;
+    z-index: 1;
+    left: 27px;
+    bottom: 15px;
+    font-size: 17px;
+}
+
+.buttons {
+    bottom: 20px;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.buttons a {
+    font-size: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.prev {
+    background-color: rgb(251, 97, 97);
+    padding: 10px;
+    border-radius: 30px 10px;
+    color: rgb(41, 41, 41);
+}
+
+.next {
+    background-color: rgb(253, 253, 120);
+    padding: 10px;
+    border-radius: 10px 30px;
+    color: rgb(41, 41, 41);
+}
+
+.next:hover {
+    background-color: rgb(193, 193, 94);
+}
+
+.prev:hover {
+    background-color: rgb(191, 74, 74);
+}
+
+.notaSlide {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    z-index: 1;
+    color: white;
+    font-size: 20px;
+}
+
+.bifeImg {
+    left: 22px;
+}
+
+@media screen and (max-width:789px) {
+    .escrita h1 {
+        font-size: 60px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .carrosel .slide img {
+        width: 450px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width:499px) {
+    .carrosel .slide img {
+        width: 350px;
+        border-radius: 10px;
+    }
+
+    .description {
+        font-size: 19px;
+    }
+
+    .descRest {
+        font-size: 13px;
+    }
+
+    .prev,
+    .next {
+        padding: 3px;
+    }
+}
+
+
+.menuContainer {
+    width: 100%;
+    text-align: center;
+}
+
+.menuContainer h1 {
+    font-size: 45px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.menuConteudo {
+    max-width: 75em;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card .img {
+    width: 350px;
+    overflow: hidden;
+    border-radius: 5px;
+
+}
+
+.card .img img {
+    width: 100%;
+    transition: .4s;
+
+}
+
+.card .img img:hover {
+    transform: scale(1.2);
+}
+
+.card h2 {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+}
+
+.price {
+    background: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.36);
+    border-radius: 30px;
+    padding: 10px;
+    width: 100px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.card-star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.reviewsCard {
+    color: rgb(104, 104, 104);
+}
+
+
+.parallax {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+}
+
+.parallax {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    background-image: url("../../img/alex-haney-CAhjZmVk5H4-unsplash.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+.News-events-container {
+    width: 100%;
+    text-align: center;
+}
+
+.News-events-container h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.conteudo {
+    max-width: 75em;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardNews {
+    position: relative;
+}
+
+.cardNews::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+    border-radius: 10px;
+}
+
+.cardNews .imgNew {
+    width: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.cardNews .imgNew img {
+    width: 100%;
+    border-radius: 10px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.cardNews .imgNew img:hover {
+    transform: scale(1.2);
+}
+
+.news {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+    text-align: left;
+    width: 480px;
+    z-index: 1;
+}

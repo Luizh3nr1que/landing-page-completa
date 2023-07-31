@@ -1,0 +1,144 @@
+.header-nav a:nth-child(5) {
+    color: rgb(255, 77, 77);
+}
+
+
+.links-mobile a:nth-child(5) {
+    background-color: rgb(248, 120, 120);
+    color: white;
+}
+
+.inicio-conteudo {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio-conteudo:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.897)), url("../../img/header/rod-long-I79Pgmhmy5M-unsplash.jpg");
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.inicio-conteudo h1 {
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+}
+
+.inicio-conteudo p {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.contact {
+    width: 100%;
+    margin-top: 130px;
+    text-align: center;
+}
+
+.contact h1 {
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.contact-conteudo {
+    max-width: 75em;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-contact input {
+    outline: none;
+    padding: 5px 10px;
+}
+
+.form-contact textarea {
+    outline: none;
+    padding: 10px 10px;
+}
+
+@media screen and (max-width:517px) {
+    .form-contact input {
+        width: 100%;
+    }
+}
+
+.campos-princiapais {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.outrosCampos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-contact .submit {
+    width: 150px;
+    padding: 10px 0;
+    margin-top: 20px;
+    float: right;
+    cursor: pointer;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.horarios {
+    display: flex;
+    flex-direction: column;
+}
+
+.horarios h2 {
+    color: black;
+    text-align: left;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.horarios p {
+    color: rgb(159, 159, 159);
+    font-size: 17px;
+    text-align: left;
+}
+
+.local {
+    max-width: 62em;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 130px;
+}

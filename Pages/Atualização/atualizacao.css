@@ -1,0 +1,189 @@
+.header-nav a:nth-child(4) {
+    color: rgb(255, 77, 77);
+}
+
+
+.links-mobile a:nth-child(4) {
+    background-color: rgb(248, 120, 120);
+    color: white;
+}
+
+.inicio-conteudo {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio-conteudo:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.897)), url("../../img/header/luisa-brimble-aFzg83dvnAI-unsplash.jpg");
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.inicio-conteudo h1 {
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+}
+
+.inicio-conteudo p {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.News-events-container {
+    width: 100%;
+    margin-top: 140px;
+}
+
+.News-events-container h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-left: 60px;
+}
+
+@media screen and (max-width:1007px) {
+    .News-events-container h1 {
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+.conteudo {
+    max-width: 70em;
+    margin: 0 auto;
+}
+
+.newsCards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardNews {
+    position: relative;
+}
+
+.cardNews::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+    border-radius: 10px;
+}
+
+.cardNews .imgNew {
+    width: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.cardNews .eventos {
+    width: 300px;
+}
+
+
+.cardNews .imgNew img {
+    width: 100%;
+    border-radius: 10px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.cardNews .imgNew img:hover {
+    transform: scale(1.2);
+}
+
+.news {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+    text-align: left;
+    width: 480px;
+    z-index: 1;
+}
+
+.eventos {
+    width: 100%;
+    margin-top: 130px;
+}
+
+.eventosConteudo {
+    max-width: 70em;
+    margin: 0 auto;
+}
+
+.eventosConteudo h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    margin-left: 60px;
+}
+
+@media screen and (max-width:986px) {
+    .eventosConteudo h1 {
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.cardE {
+    width: 300px;
+}
+
+.cardE .img-cardE {
+    width: 330px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.cardE .img-cardE img {
+    width: 100%;
+    transition: .4s;
+    border-radius: 10px;
+}
+
+.cardE .img-cardE img:hover {
+    transform: scale(1.3);
+}
+
+.cardE p {
+    text-align: left;
+    color: rgb(28, 28, 28);
+    font-weight: bold;
+}
+
+.date {
+    text-align: center !important;
+    font-weight: bold;
+    margin: 5px 0;
+}
