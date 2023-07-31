@@ -45,6 +45,27 @@
     font-weight: bold;
 }
 
+@media screen and (max-width:518px) {
+    .inicio-conteudo h1 {
+        font-size: 40px;
+    }
+
+    .inicio-conteudo p {
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:334px) {
+    .inicio-conteudo h1 {
+        font-size: 30px;
+    }
+
+    .inicio-conteudo p {
+        font-size: 13px;
+        text-align: center;
+    }
+}
 
 .News-events-container {
     width: 100%;

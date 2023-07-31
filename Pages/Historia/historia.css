@@ -55,6 +55,17 @@
     }
 }
 
+@media screen and (max-width:362px) {
+    .inicio-conteudo h1 {
+        font-size: 30px;
+    }
+
+    .inicio-conteudo p {
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
 .detalhes {
     width: 100%;
     margin: 130px 0;
